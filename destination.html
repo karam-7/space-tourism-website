@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">  
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="./css/destination.css">
+</head>
+<body>
+    <!-- ===========================Start MAIN AREA======================= -->
+    <main id="site">
+        <!-- ===Navbar AREA=== -->
+        <nav id="bar">
+            <img src="./assets/shared/logo.svg" alt="logo" class="logo">
+            <hr>
+            <button id="ham" onclick="toggleMenu()">
+                <img src="./assets/shared/icon-hamburger.svg" alt="open" class="bar-img" id="open">                
+                <img src="./assets/shared/icon-close.svg" alt="close" class="bar-img" id="close">
+            </button>
+            <div class="menu">
+                <a href="./index.html" class="menu-a"><b>00</b> Home</a>
+                <a href="./destination.html" class="menu-a"><b>01</b> Destination</a>
+                <a href="./crew.html" class="menu-a"><b>02</b> Crew</a>
+                <a href="./technology.html" class="menu-a"><b>03</b> Technology</a>
+            </div>
+        </nav>
+        <!-- ======Content Area====-->
+        <section class="content">
+           <span class="con-span"><b>01</b> Pick your destination</span>
+           <div class="info">
+            <img src="" alt="moon" class="info-img" id="pic">
+            <div class="detail">
+                <div class="detail-div">
+                    <a class="detail-a" id="moon">Moon</a>
+                    <a class="detail-a" id="mars">Mars</a>
+                    <a class="detail-a" id="europa">Europa</a>
+                    <a class="detail-a" id="titan">Titan</a>
+                </div>
+                <h1 class="detail-h1" id="name-title"></h1>
+                <p class="detail-p" id="para">
+                  
+                </p>
+                <hr>
+                <div class="space">
+                    <div class="travel">
+                        <span class="travel-span">Avg. distance</span>
+                        <h2 class="travel-h2" id="distance"></h2>
+                    </div>
+                    <div class="travel">
+                        <span class="travel-span">Est. travel time</span>
+                        <h2 class="travel-h2" id="time"></h2>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+    </main>
+    <!-- ===========================END MAIN AREA======================= -->
+    <!-- ================================START FOOTER AREA====================== -->
+    <footer class="foot">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+         >Frontend Mentor</a
+        >. Coded by
+        <a href="http://karam-portfolio.liveblog365.com" target="_blank">
+         KARAM SINGH</a
+        >
+    </footer>
+    <!-- ================================END FOOTER AREA========================= -->
+    <script src="./js/destination.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 1340px;     
+    min-height: 100vh; 
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-size: cover;  
+    font-family: 'Inconsolata';
+    background-repeat: no-repeat;
+}
+
+/* ======================== Star Main Area ================ */
+
+/* ===Navbar AREA=== */
+
+#bar{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+    padding-left: 2rem;
+}
+
+#ham{
+    display: none;
+}
+
+#bar hr{
+    width: 460px;
+    position: absolute;
+    margin-left: 10rem;
+}
+
+.menu{
+    display: flex;
+    gap: 3rem;
+    background: linear-gradient(to right, rgb(15, 14, 14), rgb(179, 140, 140), rgb(13, 13, 49));
+    width: 100%;
+    padding: 2rem 2rem 0rem 5rem;
+    margin-left: 30rem;
+}
+
+.menu-a{
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-a b{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.menu-a.active{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2rem;
+}
+
+/* Content Area */
+
+.content{
+    padding: 0rem 0em 0rem 5rem;
+}
+
+.con-span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+.con-span b{
+    color: gray;
+    font-weight: 700;
+}
+
+.info, .info1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.num-span{
+    border: 1px solid white;
+    color: #fff;
+    font-size: 1.2rem ;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.num-span.active{
+    background-color: #fff;
+    color: black;
+}
+
+.detail-span{
+    color: gray;
+    font-size: 1.2rem ;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#name{
+    padding: 2rem 0rem;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#para{
+    margin-top: 1rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: lightgray;
+    width: 460px;
+}
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    line-height: 1.5rem;
+    padding: 5px;
+}
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+
+/* ======================== End Footer Area ================ */
+  
+/* ======================== Start Media Querry Area ================ */
+
+/* 768px */
+@media screen and (max-width:768px){
+    body{
+        min-width: 768px;
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+    }
+
+    /* ===Navbar AREA=== */
+
+    #bar{
+        justify-content: space-between;
+    }
+
+    #bar hr{
+        display: none;
+        width: 0rem;
+    }
+
+    .menu{
+        margin-left: 0rem;
+        background: none;
+        background-color: rgb(1, 1, 19);
+        padding: 2rem;
+        padding-bottom: 0rem;
+        gap: 2rem;
+        width: 60%;
+    }
+
+    .menu-a b{
+        display: none;
+    }
+
+    /* Content Area */
+
+    .info{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:370px){
+    body{
+        min-width: 370px;
+        background-image: url(../assets/crew/background-crew-mobile.jpg);
+    }
+
+    #site{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    /* ===Navbar AREA=== */
+
+    #bar{
+        padding: 2rem 0rem;
+    }
+
+    .logo{
+        padding-left: 0rem;
+    }
+
+    #ham{
+        display: grid;
+        padding: 1rem;
+        background: transparent;
+        border: 3px solid hsl(270, 9%, 17%);
+    }
+
+    #ham img:last-child {
+        display: none;
+    }
+      
+    body.open #ham img:first-child {
+        display: none;
+    }
+      
+    body.open #ham img:last-child {
+        display: block;
+    }
+      
+    .overlay {
+        position: fixed;
+        z-index: 2;
+        top: 12rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        backdrop-filter: blur(6px);
+        transition: 0.3s;
+    }
+      
+    body.open .overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 2;
+        top: 08rem;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 2rem 5rem;
+        background: hsl(0, 0%, 3%);
+        box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+        translate: 100% 0;
+        transition: 0.3s;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .menu-a.active{
+        border-bottom: 2px solid #fff;
+        padding-bottom: 1rem;
+
+    }
+      
+    body.open .menu {
+        translate: 0;
+    }
+
+    /* Content Area */
+
+    .content{
+        padding: 1rem;
+        text-align: center;
+    }   
+
+    .info1{
+        flex-direction: column;
+    }
+
+    .num{
+        flex-direction: row;
+    }
+
+    #name{
+        font-size: 2rem;
+    }
+
+    #para{
+        width: 340px;
+    }
+
+    .crew-menu{
+        margin-left: 6rem;
+    }
+
+    #pic{
+        width: 95%;
+    }
+
+
+}
