@@ -124,7 +124,7 @@ body{
     text-transform: uppercase;
 }
 
-#name{
+#t-name{
     padding: 2rem 0rem;
     color: white;
     font-size: 3rem;
@@ -133,7 +133,7 @@ body{
     font-weight: 400;
 }
 
-#para{
+#t-para{
     margin-top: 1rem;
     line-height: 1.2rem;
     font-size: 1rem;
@@ -313,11 +313,11 @@ body{
         flex-direction: row;
     }
 
-    #name{
+    #t-name{
         font-size: 2rem;
     }
 
-    #para{
+    #t-para{
         width: 340px;
     }
 
@@ -325,7 +325,7 @@ body{
         margin-left: 6rem;
     }
 
-    #pic{
+    #t-pic{
         width: 95%;
     }
 

@@ -2,16 +2,16 @@ const toggleMenu = () => document.body.classList.toggle("open");
 const technologyNavItem = document.querySelector('.menu-a:nth-child(4)');
 technologyNavItem.classList.add('active');
 
-const pic = document.getElementById('pic');
+const pic = document.getElementById('t-pic');
 const one = document.getElementById('one');
 const two = document.getElementById('two');
 const three = document.getElementById('three');
-const nameTitle = document.getElementById('name');
-const para = document.getElementById('para');
+const nameTitle = document.getElementById('t-name');
+const para = document.getElementById('t-para');
 
 //Fetch Data
 
-const list = fetch("../data.json")
+const list = fetch("https://karam-7.github.io/space-tourism-website/data.json")
 .then(res=> res.json())
 
 .then((data) => {

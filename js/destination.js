@@ -4,13 +4,13 @@ destinationNavItem.classList.add('active');
 
 
 
-const pic = document.getElementById('pic');
+const pic = document.getElementById('d-pic');
 const moon = document.getElementById('moon');
 const mars = document.getElementById('mars');
 const europa = document.getElementById('europa');
 const titan = document.getElementById('titan');
 const nameTitle = document.getElementById('name-title');
-const para = document.getElementById('para');
+const para = document.getElementById('d-para');
 const distance = document.getElementById('distance');
 const time = document.getElementById('time');
 
@@ -19,7 +19,7 @@ const time = document.getElementById('time');
 
 //Fetch Data
 
-const list = fetch("../data.json")
+const list = fetch("https://karam-7.github.io/space-tourism-website/data.json")
 .then(res=> res.json())
 
 .then((data) => {

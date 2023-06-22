@@ -2,9 +2,9 @@ const toggleMenu = () => document.body.classList.toggle("open");
 const crewNavItem = document.querySelector('.menu-a:nth-child(3)');
 crewNavItem.classList.add('active');
 
-const pic = document.getElementById('pic');
+const pic = document.getElementById('c-pic');
 const role = document.getElementById('role');
-const nameTitle = document.getElementById('name');
+const nameTitle = document.getElementById('c-name');
 const bio = document.getElementById('bio');
 const person = document.getElementById('person');
 const person1 = document.getElementById('person1');
@@ -13,7 +13,7 @@ const person3 = document.getElementById('person3');
 
 //Fetch Data
 
-const list = fetch("../data.json")
+const list = fetch("https://karam-7.github.io/space-tourism-website/data.json")
 .then(res=> res.json())
 
 .then((data) => {
